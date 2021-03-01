@@ -1,0 +1,101 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+#main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width:50%;
+    height: 90%;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    box-shadow: inset 0 0 0 100vmax rgba(127, 149, 247, 0.5)
+}
+
+#title{
+    text-align: center;
+    font-size: 2em;
+}
+
+#description {
+    text-align: center;
+    font-size: 1em;
+}
+
+#survey-form {
+    background:rgba(15, 10, 63, 0.808);
+    padding: 5%;
+}
+
+#name-label, #email-label, #number-label{
+    text-align: left;
+}
+
+button, #name, #email, #number, #dropdown, #feature-dropdown{
+    border-radius: 0.5em;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    font-family:inherit;
+    font-size: inherit;
+    background-color:white;
+}
+
+textarea{
+    border-radius: 0.5em;
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    font-family:inherit;
+    font-size: inherit;
+    background-color:white;    
+}
+
+button{
+    color: white;
+    font-weight: bold;
+    background-image: radial-gradient(rgb(28, 48, 28),green,rgb(125, 238, 125));
+}
+
+.feature{
+    display: inline-block;
+    margin-top: 30px; 
+}
+
+.radio, .checkbox{
+    display:inline-block;
+    line-height: 0.8cm;
+}
+
+.suggestions{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
